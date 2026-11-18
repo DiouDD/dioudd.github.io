@@ -1,44 +1,64 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contactez-moi</title>
+  <title>Clément Roudier — Contact</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
-<body class="dark">
+<body>
   <header>
-    <nav>
-      <div class="nav-left">
+    <div class="wrap">
+      <a class="brand" href="index.html">Clément Roudier</a>
+      <nav>
         <a href="index.html">Présentation</a>
         <a href="projets.html">Projets</a>
-        <a href="contact.html">Contact</a>
-      </div>
-      <button id="theme-toggle">🌙</button>
-    </nav>
+        <a href="realisation.html">Réalisation</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main class="content">
-    <section class="contact">
-      <h1>Contactez-moi</h1>
-      <p>Si vous avez des questions ou souhaitez discuter d'une opportunité, n'hésitez pas à m'envoyer un message en remplissant le formulaire ci-dessous :</p>
-      
-      <form action="mailto:votre-email@example.com" method="post" enctype="text/plain">
-        <label for="name">Nom :</label>
-        <input type="text" id="name" name="name" required />
+  <main class="wrap">
+    <div class="page-head">
+      <p class="eyebrow">Me joindre</p>
+      <h1>Contact</h1>
+      <p class="lead">Une opportunité, une question ? Écrivez-moi.</p>
+    </div>
 
-        <label for="email">Email :</label>
-        <input type="email" id="email" name="email" required />
-
-        <label for="message">Message :</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-
-        <button type="submit">Envoyer</button>
-      </form>
-    </section>
+    <ul class="contact-list">
+      <li>
+        <span>Email</span>
+        <a href="mailto:clement.roudier@etu.fr">clement.roudier@etu.fr</a>
+      </li>
+      <li>
+        <span>Téléphone</span>
+        <a href="tel:+33609677680">06 09 67 76 80</a>
+      </li>
+      <li>
+        <span>LinkedIn</span>
+        <a href="https://www.linkedin.com/in/cl%C3%A9ment-roudier-2951a0351/" target="_blank" rel="noopener">Clément Roudier</a>
+      </li>
+      <li>
+        <span>GitHub</span>
+        <a href="https://github.com/DiouDD" target="_blank" rel="noopener">DiouDD</a>
+      </li>
+      <li>
+        <span>Localisation</span>
+        <strong>Vichy (03)</strong>
+      </li>
+    </ul>
   </main>
 
-  <script src="script.js"></script>
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© 2026 Clément Roudier</span>
+      <span>Vichy · Clermont-Ferrand</span>
+    </div>
+  </footer>
 </body>
 </html>

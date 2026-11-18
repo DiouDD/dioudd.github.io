@@ -3,45 +3,152 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mon Portfolio</title>
+  <title>Clément Roudier — Présentation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
-<body class="dark">
+<body>
   <header>
-    <nav>
-      <div class="nav-left">
-        <a href="index.html">Présentation</a>
+    <div class="wrap">
+      <a class="brand" href="index.html">Clément Roudier</a>
+      <nav>
+        <a href="index.html" aria-current="page">Présentation</a>
         <a href="projets.html">Projets</a>
-      </div>
-      <button id="theme-toggle">🌙</button>
-    </nav>
+        <a href="realisation.html">Réalisation</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main class="content">
-    <section class="presentation">
-      <div class="profile-container">
-        <img src="images/Profil.png" alt="Photo de profil" class="profile-pic" />
-        <div class="intro-text">
-          <h1>Roudier Clément</h1>
-          <h2>Étudiant en 1ère année d'IUT Informatique à Aubière</h2>
-          <p>
-            Passionné par le développement informatique, je m'investis pleinement dans chaque projet que j'entreprends. À travers mes expériences, notamment en .NET MAUI, j'ai appris à allier rigueur, organisation et travail en équipe. En parallèle de mes études, j'ai eu l'opportunité de travailler dans une entreprise de location de matériel événementiel, une expérience qui a renforcé mes compétences en gestion de projets et en communication. Curieux et motivé, mon objectif est de continuer à développer mes compétences techniques tout en restant à l'écoute des besoins des utilisateurs.
-          </p>
+  <main class="wrap">
+    <div class="hero">
+      <img class="portrait" src="images/Profil.png" alt="Photo de Clément Roudier" />
+      <div>
+        <p class="eyebrow">Développeur en formation</p>
+        <h1>Clément Roudier</h1>
+        <p class="lead">Étudiant en BUT Informatique, spécialité web, à l'IUT de Clermont-Ferrand.</p>
+        <p class="muted">
+          Passionné par le développement, je conçois des applications web et de bureau, du back-end à l'interface.
+          Rigoureux, autonome et à l'aise en équipe, je cherche à progresser sur chaque projet.
+        </p>
+        <div class="actions">
+          <a class="btn btn-solid" href="projets.html">Voir mes projets</a>
+          <a class="btn" href="cv.html">Mon CV</a>
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <p class="eyebrow">Disponibilité</p>
+      <div class="search-card">
+        <h2>Je cherche un stage</h2>
+        <p class="lead">Stage de 10 semaines à partir du 5 avril 2027.</p>
+        <div class="actions">
+          <a class="btn btn-solid" href="contact.html">Me contacter</a>
+          <a class="btn" href="cv.html">Voir mon CV</a>
         </div>
       </div>
     </section>
-  
-<aside class="contacts">
-    <h3>Mes Contacts</h3>
-    <ul>
-        <li><a href="mailto:votre-email@example.com">Email</a></li>
-        <li><a href="https://www.snapchat.com/add/votre-snapchat" target="_blank">Snapchat</a></li>
-        <li><a href="https://www.linkedin.com/in/votre-linkedin" target="_blank">LinkedIn</a></li>
-        <li><a href="https://www.instagram.com/votre-instagram" target="_blank">Instagram</a></li>
-    </ul>
-</aside>
-</main>
 
-  <script src="script.js"></script>
+    <section>
+      <p class="eyebrow">Expérience · Juin 2026 · 8 semaines</p>
+      <div class="stage-card">
+        <div>
+          <h2>Stage chez SATEL, à Vichy</h2>
+        </div>
+        <div>
+          <p class="quote">
+            Un premier contact concret avec le travail en entreprise : reprendre une base de code existante et livrer une fonctionnalité complète.
+          </p>
+          <p>
+            J'ai ajouté un module CRUD à <strong>SatelPlatform</strong>, l'application interne de l'entreprise.
+            Le module est développé en TypeScript, avec NestJS côté backend et Angular côté frontend.
+          </p>
+          <div class="actions">
+            <a class="btn" href="https://github.com/DiouDD/stage2emeAnnee" target="_blank" rel="noopener">Voir le dépôt GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <p class="eyebrow">Parcours</p>
+      <h2>Mon parcours</h2>
+      <ol class="timeline">
+        <li>
+          <time>2023</time>
+          <h3>Baccalauréat général</h3>
+          <p>Lycée St-Pierre de Cusset (Vichy) · Spécialités mathématiques et NSI</p>
+        </li>
+        <li>
+          <time>2023 · en cours</time>
+          <h3>BUT Informatique</h3>
+          <p>IUT de Clermont-Ferrand · Spécialité web</p>
+        </li>
+        <li>
+          <time>Juin 2026 · 8 semaines</time>
+          <h3>Stage chez SATEL</h3>
+          <p>Vichy · Ajout d'un module à l'application interne SatelPlatform</p>
+        </li>
+        <li>
+          <time>Septembre 2026</time>
+          <h3>Entrée en 2e année de BUT</h3>
+          <p>Spécialité web</p>
+        </li>
+      </ol>
+    </section>
+
+    <section>
+      <p class="eyebrow">Compétences</p>
+      <h2>Technologies</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Langages</h3>
+          <ul class="tags">
+            <li>C</li><li>C++</li><li>C#</li><li>Java</li><li>Kotlin</li><li>PHP</li><li>Python</li><li>SQL / NoSQL</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Frameworks</h3>
+          <ul class="tags">
+            <li>Angular</li><li>NestJS</li><li>Vue.js</li><li>Spring Boot</li><li>Blazor</li><li>.NET MAUI</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Web &amp; outils</h3>
+          <ul class="tags">
+            <li>HTML</li><li>CSS</li><li>Git</li><li>Docker</li><li>Méthodes agiles</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <p class="eyebrow">En dehors du code</p>
+      <h2>Centres d'intérêt</h2>
+      <div class="interests">
+        <div class="interest">
+          <h3>Basket</h3>
+          <p>3 ans de club</p>
+        </div>
+        <div class="interest">
+          <h3>Salle de sport</h3>
+        </div>
+        <div class="interest">
+          <h3>Cyclotourisme</h3>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© 2026 Clément Roudier</span>
+      <span>Vichy · Clermont-Ferrand</span>
+    </div>
+  </footer>
 </body>
 </html>

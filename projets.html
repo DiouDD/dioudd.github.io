@@ -3,32 +3,87 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mes Projets</title>
+  <title>Clément Roudier — Projets</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
-<body class="dark">
+<body>
   <header>
-    <nav>
-      <div class="nav-left">
+    <div class="wrap">
+      <a class="brand" href="index.html">Clément Roudier</a>
+      <nav>
         <a href="index.html">Présentation</a>
-        <a href="projets.html">Projets</a>
-      </div>
-      <button id="theme-toggle">🌙</button>
-    </nav>
+        <a href="projets.html" aria-current="page">Projets</a>
+        <a href="realisation.html">Réalisation</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main class="content">
-    <section class="projets">
-      <h1>Mes Projets</h1>
-      <p>Voici la liste de mes projets (à compléter).</p>
-      <ul>
-        <li>Projet 1 : Description rapide</li>
-        <li>Projet 2 : Description rapide</li>
-        <li>Projet 3 : Description rapide</li>
+  <main class="wrap">
+    <div class="page-head">
+      <p class="eyebrow">Réalisations</p>
+      <h1>Projets</h1>
+      <p class="lead">Quelques projets réalisés pendant mon BUT.</p>
+    </div>
+
+    <section>
+      <ul class="projects">
+        <li>
+          <div class="media-placeholder">Capture d'écran à venir</div>
+          <h2 class="project-title">RentPark</h2>
+          <p class="meta">Web &amp; mobile · 6 mois</p>
+          <p>Application de gestion de location de véhicules, avec un site de réservations.</p>
+          <ul class="tags"><li>C# / ASP.NET</li><li>Blazor</li><li>EF Core</li></ul>
+        </li>
+        <li>
+          <div class="media-placeholder">Capture d'écran à venir</div>
+          <h2 class="project-title">MemoryTrip</h2>
+          <p class="meta">Projet de 2e année · 8 mois · équipe de 7</p>
+          <p>Réseau social de partage de voyages, dans l'esprit de Polarsteps. Trois applications : une application principale en PHP, une administration en Blazor et une application mobile en Kotlin.</p>
+          <ul class="tags"><li>PHP</li><li>Blazor</li><li>Kotlin</li><li>SQL</li><li>Microservices</li></ul>
+          <p class="meta"><a href="realisation.html">Voir la réalisation technique →</a></p>
+        </li>
+        <li>
+          <div class="media-placeholder">Capture d'écran à venir</div>
+          <h2 class="project-title">Gestion de véhicules</h2>
+          <p class="meta">Projet de 2e année · 8 mois · équipe de 7</p>
+          <p>Applications web et mobile pour une entreprise de gestion et de location de véhicules.</p>
+          <ul class="tags"><li>PHP</li><li>Kotlin</li><li>SQL</li><li>Microservices</li></ul>
+        </li>
+        <li>
+          <div class="media-placeholder">Capture d'écran à venir</div>
+          <h2 class="project-title">Reversi</h2>
+          <p class="meta">Application de bureau · 3,5 mois</p>
+          <p>Version numérique du jeu de plateau.</p>
+          <ul class="tags"><li>.NET MAUI</li></ul>
+        </li>
+        <li>
+          <div class="media-placeholder">Capture d'écran à venir</div>
+          <h2 class="project-title">Analyse d'une base de données</h2>
+          <p class="meta">SAE 2.04 · 2 mois · équipe de 3</p>
+          <p>Analyse d'une base de données pour en tirer différentes statistiques.</p>
+          <ul class="tags"><li>Python</li><li>PostgreSQL</li></ul>
+        </li>
+        <li>
+          <div class="media-placeholder">Capture d'écran à venir</div>
+          <h2 class="project-title">Tower Defense</h2>
+          <p class="meta">Application · 4 semaines</p>
+          <p>Jeu avec interface graphique de type « Tower Defense ».</p>
+          <ul class="tags"><li>JavaFX</li></ul>
+        </li>
       </ul>
     </section>
   </main>
 
-  <script src="script.js"></script>
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© 2026 Clément Roudier</span>
+      <span>Vichy · Clermont-Ferrand</span>
+    </div>
+  </footer>
 </body>
 </html>

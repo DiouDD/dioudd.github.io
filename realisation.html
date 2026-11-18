@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clément Roudier — Réalisation technique</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <a class="brand" href="index.html">Clément Roudier</a>
+      <nav>
+        <a href="index.html">Présentation</a>
+        <a href="projets.html">Projets</a>
+        <a href="realisation.html" aria-current="page">Réalisation</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="page-head">
+      <p class="eyebrow">Réalisation technique · 2e année</p>
+      <h1>MemoryTrip</h1>
+      <p class="lead">Réseau social de partage de voyages, dans l'esprit de Polarsteps, réalisé en équipe de 7 sur 8 mois.</p>
+    </div>
+
+    <section>
+      <p class="eyebrow">Résumé</p>
+      <ul class="summary">
+        <li>Trois applications : une application principale en PHP, une administration en Blazor et une application mobile en Kotlin.</li>
+        <li>Une architecture en microservices qui fait communiquer les trois applications.</li>
+        <li>Les données sont stockées dans une base SQL.</li>
+        <li>Un projet réalisé en équipe de 7 personnes sur 8 mois.</li>
+      </ul>
+    </section>
+
+    <section>
+      <p class="eyebrow">Architecture</p>
+      <h2>Vue d'ensemble</h2>
+      <svg class="diagram" viewBox="0 0 640 330" role="img" aria-label="Schéma : trois applications reliées à des microservices, eux-mêmes reliés à une base SQL">
+        <line x1="130" y1="110" x2="130" y2="170" />
+        <line x1="320" y1="110" x2="320" y2="170" />
+        <line x1="510" y1="110" x2="510" y2="170" />
+        <line x1="320" y1="230" x2="320" y2="270" />
+
+        <rect x="40" y="40" width="180" height="70" rx="12" />
+        <text x="130" y="70" text-anchor="middle">Application principale</text>
+        <text class="small" x="130" y="92" text-anchor="middle">PHP</text>
+
+        <rect x="230" y="40" width="180" height="70" rx="12" />
+        <text x="320" y="70" text-anchor="middle">Administration</text>
+        <text class="small" x="320" y="92" text-anchor="middle">Blazor</text>
+
+        <rect x="420" y="40" width="180" height="70" rx="12" />
+        <text x="510" y="70" text-anchor="middle">Application mobile</text>
+        <text class="small" x="510" y="92" text-anchor="middle">Kotlin</text>
+
+        <rect x="40" y="170" width="560" height="60" rx="12" />
+        <text x="320" y="206" text-anchor="middle">Microservices</text>
+
+        <rect x="230" y="270" width="180" height="50" rx="12" />
+        <text x="320" y="301" text-anchor="middle">Base de données SQL</text>
+      </svg>
+    </section>
+
+    <section>
+      <p class="eyebrow">Figures</p>
+      <h2>Aperçu de l'application</h2>
+      <div class="figures">
+        <div class="media-placeholder">Capture : application principale (PHP)</div>
+        <div class="media-placeholder">Capture : administration (Blazor)</div>
+        <div class="media-placeholder">Capture : application mobile (Kotlin)</div>
+      </div>
+    </section>
+
+    <section>
+      <p class="eyebrow">Compétences mobilisées</p>
+      <ul class="summary">
+        <li>Développer des applications web, d'administration et mobile.</li>
+        <li>Concevoir une architecture en microservices.</li>
+        <li>Gérer et stocker des données en SQL.</li>
+        <li>Travailler en équipe sur un projet de 8 mois.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© 2026 Clément Roudier</span>
+      <span>Vichy · Clermont-Ferrand</span>
+    </div>
+  </footer>
+</body>
+</html>
